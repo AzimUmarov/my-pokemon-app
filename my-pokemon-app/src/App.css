@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(24%, 48%, 80%, 0.9), rgba(24%, 48%, 80%, 0.9)),
+    url("https://i.pinimg.com/originals/89/a8/9d/89a89d968151589a3cc24d41be5a503b.jpg");
+}
+
+.title {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0;
+}
