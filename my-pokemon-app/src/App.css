@@ -16,3 +16,20 @@ body {
     text-align: center;
     margin: 30px 0;
 }
+
+.nav-poke {
+    padding-bottom: 3.5rem;
+    position: sticky;
+}
+.nav-poke input{
+    margin-left: -9.6rem;
+}
+
+.nav-poke img{
+    width: 250px;
+    height: 40px;
+}
+
+.nav-poke ul {
+    margin-right: -9.6rem;
+}

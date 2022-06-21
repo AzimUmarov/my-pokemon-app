@@ -2,11 +2,12 @@ import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import "./Poke.css";
 import poke from "./Poke";
+import DetailsPoke from "./DetailsPoke";
 
 function Poke({url}) {
     const [pokeObject, setPokeObject] = useState();
     const [isLoading, setIsLoading] = useState(false);
-
+    const [shows, setShows] = useState(false);
     useEffect(() => {
         setData(url);
     }, [url]);
@@ -26,7 +27,9 @@ function Poke({url}) {
     }
     if(pokeObject) {
         return (
-                <div className={`poke ${pokeObject.types[0].type.name}`}>
+            <>
+                <div className={`poke ${pokeObject.types[0].type.name}`} onClick={() => setShows(true)}>
+                    <DetailsPoke shows={shows} setShows={setShows} />
                     <span className="name mt-1">{pokeObject.forms[0].name}</span>
                     <img src={pokeObject.sprites.other.dream_world.front_default} alt="" className="poke-image" />
                     <div className="poke-footer">
@@ -34,6 +37,7 @@ function Poke({url}) {
                         {pokeObject.abilities && pokeObject.abilities.map(val => !val.is_hidden ? <span className="badge text-bg-secondary m-1">{val.ability.name}</span> : null)}
                     </div>
                 </div>
+            </>
             );
     }
     else {
