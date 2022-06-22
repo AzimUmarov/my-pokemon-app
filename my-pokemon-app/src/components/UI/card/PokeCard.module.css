@@ -45,6 +45,14 @@
     font-size: 1.3rem;
 }
 
+.cardBox ul, p, strong{
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: .2rem;
+    align-items: flex-end;
+}
+
 .cardName {
     text-align: center;
     color: #000;
@@ -58,6 +66,5 @@
     justify-content: space-between;
     display: flex;
     position: absolute;
-
 }
 
