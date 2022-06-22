@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import "./Poke.css";
-import poke from "./Poke";
-import DetailsPoke from "./DetailsPoke";
+import PokeCard from "./UI/card/PokeCard";
 
 function Poke({url}) {
     const [pokeObject, setPokeObject] = useState();
@@ -28,8 +27,8 @@ function Poke({url}) {
     if(pokeObject) {
         return (
             <>
+                {shows ? <PokeCard pokeObject={pokeObject} shows={shows} setShows={setShows} /> : null}
                 <div className={`poke ${pokeObject.types[0].type.name}`} onClick={() => setShows(true)}>
-                    <DetailsPoke shows={shows} setShows={setShows} />
                     <span className="name mt-1">{pokeObject.forms[0].name}</span>
                     <img src={pokeObject.sprites.other.dream_world.front_default} alt="" className="poke-image" />
                     <div className="poke-footer">
