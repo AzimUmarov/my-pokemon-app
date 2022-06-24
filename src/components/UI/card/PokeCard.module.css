@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Patrick+Hand&display=swap');
+
+.pokeCard{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: rgba(4, 5, 0, 0.84);
+}
+
+.pokeCardContent{
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 6%;
+    min-width: 50%;
+    min-height: 60%;
+}
+.pokeCard.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImage{
+    width: 500px;
+    height: 500px;
+}
+.cardBox{
+    margin-left: 30%;
+    width: 42rem;
+    height: 33rem;
+    background: white;
+    border-radius: 25px;
+    color: white;
+}
+.cardBox span{
+    color: #000;
+    display: flex;
+    position: absolute;
+    padding: .33rem 0.9rem;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.3rem;
+}
+
+.cardBox ul, p, strong{
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: .2rem;
+    align-items: flex-end;
+}
+
+.cardName {
+    text-align: center;
+    color: #000;
+    text-transform: capitalize;
+    font-family: 'Fredoka One', cursive;
+}
+.pokeCardId{
+    align-items: flex-start;
+    width: 15%;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+}
+.b1{
+    margin: 0 5rem;
+}
+.b2{
+    margin: 0 3rem;
+}
+.b3{
+    margin: 0 3rem;
+}
+
+/*Tab*/
+
+.tab p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}

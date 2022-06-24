@@ -1,0 +1,17 @@
+.loader {
+    margin: 20rem 20rem 20rem 40rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 20px dashed goldenrod;
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.4);
+    }
+}
