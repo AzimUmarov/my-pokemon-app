@@ -1,6 +1,7 @@
 # Welcome to My Pokemon App
 ***
 Hello there!
+Qwasar.io Season 3 My Pokemon App project
 
 ## Task
 Create a multiple page Pokemon game application with ReactJS.
@@ -33,7 +34,7 @@ npm install
 You can use it from your local machine because You know, docode has some errors with ReactJS
 
 ```
-    npm start
+npm start
 ```
 http://localhost:8080/
 
