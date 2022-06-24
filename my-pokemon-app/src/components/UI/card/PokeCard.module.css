@@ -76,3 +76,12 @@
 .b3{
     margin: 0 3rem;
 }
+
+/*Tab*/
+
+.tab p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100px;
+}

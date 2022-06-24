@@ -5,22 +5,20 @@ import PokeCard from "./UI/card/PokeCard";
 
 function Poke({url}) {
     const [pokeObject, setPokeObject] = useState();
-    const [isLoading, setIsLoading] = useState(false);
     const [shows, setShows] = useState(false);
-    useEffect(() => {
-        setData(url);
-    }, [url]);
 
+    useEffect(() => {
+        setData(url).then(r => r);
+    }, [url]);
     async function setData(url){
-        setIsLoading(true);
         let cancel = axios.CancelToken.source();
         await axios.get(url,{ cancelToken: cancel.token})
             .then(res => {
                 setPokeObject(res.data);
-                setIsLoading(false);
             })
             .catch(e => {
-            setIsLoading(false);
+                alert("Error Occurred, Please check your connection and reload the page");
+                return e;
         });
         return () => cancel();
     }
