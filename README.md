@@ -2,6 +2,7 @@
 ***
 Hello there!
 Qwasar.io Season 3 My Pokemon App project
+https://my-pokemon-theazimjon.netlify.app
 
 ## Task
 Create a multiple page Pokemon game application with ReactJS.
