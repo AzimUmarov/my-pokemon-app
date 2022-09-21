@@ -2,7 +2,10 @@
 ***
 Hello there!
 Qwasar.io Season 3 My Pokemon App project
-https://my-pokemon-theazimjon.netlify.app
+
+[Live Demo](https://my-pokemon-theazimjon.netlify.app)
+
+<img src="https://theazimjon.netlify.app/assets/img/portfolio/pokemon.png" />
 
 ## Task
 Create a multiple page Pokemon game application with ReactJS.
@@ -23,7 +26,7 @@ and you can exit the window with click outside the card(window)
 
 Error handler works if API don't respond or you have slow connection and you can see error handler by quickly clicking button pagination next :)
 
-I use bootstrap for styling the project also w3School Css styles for tab layout in the modal window (https://www.w3schools.com/w3css/4/w3.css)
+I use bootstrap for styling the project also w3School CSS styles for tab layout in the modal window (https://www.w3schools.com/w3css/4/w3.css)
 and of course https://reactjs.org/docs/getting-started.html
 
 ## Installation
@@ -32,12 +35,16 @@ npm install
 ```
 
 ## Usage
-You can use it from your local machine because You know, docode has some errors with ReactJS
 
 ```
 npm start
 ```
-http://localhost:8080/
+- http://localhost:8080
+
+### MIT License
+[![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0])  
+<a href="https://github.com/theazimjon/my-pokemon-app/blob/main/LICENSE.md" > Copyright (c) 2022 Azimjon Umarov </a>
+<p> Forbidden plagiarism for assigments! </p>
 
 
 ### The Core Team
